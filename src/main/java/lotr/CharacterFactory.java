@@ -10,7 +10,7 @@ import static org.reflections.scanners.Scanners.SubTypes;
 public class CharacterFactory {
     @SneakyThrows
     public Character createCharacter(){
-        Reflections reflections = new Reflections("src/main/MoreOOP/src/main/java/lotr");
+        Reflections reflections = new Reflections("lotr");
 
         Set<Class<?>> subTypes =
                 reflections.get(SubTypes.of(Character.class).asClass());

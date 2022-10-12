@@ -6,8 +6,8 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public abstract class Character{
 
-    private int power;
     private int hp;
+    private int power;
     private BasicKick kickType;
 
     public void kick(Character c) {
